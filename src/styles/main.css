@@ -1,0 +1,44 @@
+.main-container {
+    height: 75vh;
+    background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8)), url(/images/srh1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container .row {
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 4.2em;
+    text-align: center;
+    margin: 0 0.1em;
+}
+
+.main-col h1 {
+    font-size: 175px;
+    font-weight: bold;
+    color: #062C67;
+    margin: auto;
+    padding: 8px;
+}
+
+
+.main-pedia {
+    background-color: #16A085;
+    border-radius: 12px;
+}
+
+.main-adult {
+    background-color: #2874A6;
+    border-radius: 12px;
+}
+
+.main-er {
+    background-color: #BA4A00;
+    border-radius: 12px;
+}
+.main-ca {
+    background-color: #B03A2E;
+    border-radius: 12px;
+}
+

@@ -1,0 +1,34 @@
+.footer {
+    height: 10vh;
+    color: #062c67;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align:  center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col {
+     margin: auto;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+
+
+/**Time & Date**/
+.time__container {
+    margin: auto;
+}
+
+.time__container .date_time {
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+}
+
+.time__container p {
+    margin: 0 5px;
+}
