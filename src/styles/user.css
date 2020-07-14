@@ -1,7 +1,7 @@
 
 .user-container {
     width: 100%;
-    height: 100vh;
+    height: 87vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -9,4 +9,70 @@
     background: linear-gradient(rgba(255,255,255,.5), rgba(0,0,0,.3)), url(/images/srh1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.user-center {
+    margin: auto;
+    height: 450px;
+    border-radius: 8px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.user-center .adult__title-div {
+    width: 100%;
+    margin-top: -75px;
+    padding: 12px;
+    color: #fff;
+    background-color: #2874A6;
+    border-radius: 3px;  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+}
+
+.user-center  .user__title {
+    text-align: center;
+    margin: 5px;
+}
+
+.user-center .current-queue {
+    margin: 0;
+    padding: 20px 15px;    
+    font-size: 2.4rem;
+}
+
+.user-center .queue {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #062C67;
+    font-size: 9rem;
+}
+
+.add-btn {
+    font-size: 1.5rem;
+    color:#fff;
+    background: #4CAF50;
+    margin: 15px;
+    border-radius: 5px;
+    border: solid #4CAF50;
+}
+
+.add-btn a {
+    width: auto;
+    text-decoration: none;
+    color: #fff;
+}
+
+.add-btn {
+cursor: pointer;
+transition: all 0.25s ease;
+}
+
+.add-btn a:hover {
+    font-size: 1.5rem;
+    color: #fff;
 }

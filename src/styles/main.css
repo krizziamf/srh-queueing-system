@@ -1,12 +1,12 @@
 .main-container {
-    height: 75vh;
+    height: 70vh;
     background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8)), url(/images/srh1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.main-container .row {
-    padding-top: 20px;
+.main-container .main-row {
+    padding-top: 7%;
     color: white;
     font-weight: bold;
     font-size: 4.2em;

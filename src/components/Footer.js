@@ -27,7 +27,7 @@ class Footer extends Component {
 
         return (
             <footer className="footer">
-                <div className="container-fluid">
+                <section className="container-fluid">
                     <div className="row">
                         <div className="col footer-col footer-contactnum">
                             <p >STO ROSARIO HOSPITAL CONTACT #:</p>
@@ -38,7 +38,7 @@ class Footer extends Component {
                             <div className="date_time">Time: <p id="time"></p></div>
                         </div>
                     </div>
-                </div>
+                </section>
             </footer>
         )
     }
