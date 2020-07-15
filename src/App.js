@@ -9,6 +9,8 @@ import Adult from './components/Adult';
 import Footer from './components/Footer';
 import './App.css';
 import Pedia from './components/Pedia';
+import Cashier from './components/Cashier';
+import Er from './components/ER';
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
       <Header />
       {/* <Adult /> */}
       {/* <Pedia /> */}
-      <Main />
+      {/* <Cashier /> */}
+      <Er />
+      {/* <Main /> */}
       {/* <Contact /> */}
       {/* <Login /> */}
-      <Footer />
+
     </div>
   );
 }

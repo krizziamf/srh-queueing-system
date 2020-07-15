@@ -33,6 +33,36 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
 
+.user-center .pedia__title-div {
+    width: 100%;
+    margin-top: -75px;
+    padding: 12px;
+    color: #fff;
+    background-color: #16A085;
+    border-radius: 3px;  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+}
+
+.user-center .cashier__title-div {
+    width: 100%;
+    margin-top: -75px;
+    padding: 12px;
+    color: #fff;
+    background-color: #B03A2E;
+    border-radius: 3px;  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+}
+
+.user-center .er__title-div {
+    width: 100%;
+    margin-top: -75px;
+    padding: 12px;
+    color: #fff;
+    background-color: #BA4A00;
+    border-radius: 3px;  
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
+}
+
 .user-center  .user__title {
     text-align: center;
     margin: 5px;
@@ -42,6 +72,7 @@
     margin: 0;
     padding: 20px 15px;    
     font-size: 2.4rem;
+    font-weight: bolder;
 }
 
 .user-center .queue {
@@ -50,11 +81,13 @@
     padding: 0;
     color: #062C67;
     font-size: 9rem;
+    font-weight: bold;
 }
 
 .add-btn {
+    width: 100%;
     font-size: 1.5rem;
-    color:#fff;
+    color:rgb(93, 77, 77);
     background: #4CAF50;
     margin: 15px;
     border-radius: 5px;

@@ -7,14 +7,12 @@ class Header extends Component {
         return (
             <section className="srh-header" >
                 <div className="navbar-brand">
-                    <span><img src="./images/logo2.jpg" width="130px;" height="80px" /></span>
+                    <span><img src="./images/logo2.jpg" width="95px;" height="60px" /></span>
                     <span className="navbar-text">STO. ROSARIO HOSPITAL</span>
                 </div>
             </section>
         )
-
     }
-
 }
 
 export default Header;

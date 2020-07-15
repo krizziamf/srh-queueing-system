@@ -11,8 +11,12 @@ function Adult() {
                 <div className="adult__title-div">
                     <h1 className="user__title">ADULT</h1>
                 </div>
-                <h1 className="current-queue">CURRENT QUEUE</h1>
-                <h1 className="queue"></h1>
+                <div>
+                    <h1 className="current-queue">CURRENT QUEUE</h1>
+                </div>
+                <div>
+                    <h1 className="queue">0</h1>
+                </div>
                 <button className="add-btn"><a href="#">ADD QUEUE</a></button>
                 <a href="#" className="reset-btn">Reset Queue</a>
             </form>
