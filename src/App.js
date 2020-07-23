@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
-// import Login from './component/Login';
+import Login from './components/Login';
 import Main from './components/Main';
 import Adult from './components/Adult';
 // import Contact from './component/Contact';
@@ -18,8 +18,8 @@ function App() {
       <Header />
       {/* <Adult /> */}
       {/* <Pedia /> */}
-      {/* <Cashier /> */}
-      <Er />
+      <Cashier />
+      {/* <Er /> */}
       {/* <Main /> */}
       {/* <Contact /> */}
       {/* <Login /> */}
