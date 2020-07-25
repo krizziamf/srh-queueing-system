@@ -18,9 +18,9 @@ function App() {
       <Header />
       {/* <Adult /> */}
       {/* <Pedia /> */}
-      <Cashier />
+      {/* <Cashier /> */}
       {/* <Er /> */}
-      {/* <Main /> */}
+      <Main />
       {/* <Contact /> */}
       {/* <Login /> */}
 
