@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
@@ -20,9 +21,29 @@ function App() {
       {/* <Pedia /> */}
       {/* <Cashier /> */}
       {/* <Er /> */}
-      <Main />
+      {/* <Main /> */}
       {/* <Contact /> */}
       {/* <Login /> */}
+
+      <Router>
+        <Switch>
+          <Route path="/cashier">
+            <Cashier />
+          </Route>
+          <Route path="/emergency">
+            <Er />
+          </Route>
+          <Route path="/pedia">
+            <Pedia />
+          </Route>
+          <Route path="/adult">
+            <Adult />
+          </Route>
+          <Route path="/">
+            <Main />
+          </Route>
+        </Switch>
+      </Router>
 
     </div>
   );
