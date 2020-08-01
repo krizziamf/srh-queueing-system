@@ -17,13 +17,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Adult /> */}
-      {/* <Pedia /> */}
-      {/* <Cashier /> */}
-      {/* <Er /> */}
-      {/* <Main /> */}
-      {/* <Contact /> */}
-      {/* <Login /> */}
 
       <Router>
         <Switch>

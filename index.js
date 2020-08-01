@@ -1,5 +1,4 @@
 const express = require("express");
-// const bodyParser = require("body-parser");
 const http = require("http");
 const socketIo = require("socket.io");
 
@@ -7,10 +6,8 @@ const port = process.env.PORT || 4000;
 const index = require("./app");
 
 const app = express();
-// app.use(express.urlencoded({extended: true}));
-// app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
-app.use(index);
+app.use("/test",index);
 
 const server = http.createServer(app);
 

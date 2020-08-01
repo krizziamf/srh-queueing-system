@@ -8,10 +8,10 @@ const ENDPOINT = "http://127.0.0.1:4000";
 
 function Main() {
 
-    const [cashierResponse, setCashierResponse] = useState("");
-    const [pediaResponse, setPediaResponse] = useState("");
-    const [adultResponse, setAdultResponse] = useState("");
-    const [emergencyResponse, setEmergencyResponse] = useState("");
+    const [cashierResponse, setCashierResponse] = useState(0);
+    const [pediaResponse, setPediaResponse] = useState(0);
+    const [adultResponse, setAdultResponse] = useState(0);
+    const [emergencyResponse, setEmergencyResponse] = useState(0);
   
     useEffect(() => {
       const socket = socketIOClient(ENDPOINT);
