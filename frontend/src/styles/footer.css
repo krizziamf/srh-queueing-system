@@ -1,5 +1,7 @@
 .footer {
+    /* height: 2vh; */
     color:blue;
+    background-color: white;
     font-size: 1.8rem;
     font-weight: bold;
     text-align:  center;
@@ -7,16 +9,22 @@
     margin: 0;
 }
 
+.footer-col {
+    margin: 10px;
+}
+
+.footer-contactnum p {
+    margin-bottom: 1px;
+}
+
 /**Time & Date**/
 .time__container {
     margin: auto;
 }
 
-.time__container .date_time {
-    display: flex;
-    flex-direction: row;
+/* .time__container .date_time {
     margin: 8px;
-}
+} */
 
 .time__container p {
     margin: 0 5px;

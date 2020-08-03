@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
-import Login from './components/Login';
 import Main from './components/Main';
 import Adult from './components/Adult';
 // import Contact from './component/Contact';
@@ -17,14 +16,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Adult /> */}
-      {/* <Pedia /> */}
-      {/* <Cashier /> */}
-      {/* <Er /> */}
-      {/* <Main /> */}
-      {/* <Contact /> */}
-      {/* <Login /> */}
-
       <Router>
         <Switch>
           <Route path="/cashier">
@@ -41,10 +32,10 @@ function App() {
           </Route>
           <Route path="/">
             <Main />
+            <Footer />
           </Route>
         </Switch>
       </Router>
-
     </div>
   );
 }

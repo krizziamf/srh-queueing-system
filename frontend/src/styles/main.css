@@ -2,34 +2,33 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main-container {
-    height: 90vh;
+    /* height: 75vh; */
     background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8)), url(/images/srh1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-container .now_serving{
-    margin-top: 20px;
     padding: 20px;
     /* background-color: #fff; */
 }
 
 .main-container .now_serving h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
     background-color: #fff;
     margin: 0 20%;
 }
 
 .main-container .main-row {
-    padding: 50px 0;
+    padding: 115px 0;
     color: white;
     font-weight: bold;
-    font-size: 4.2em;
+    font-size: 3.6rem;
     text-align: center;
     margin: 0;
 }

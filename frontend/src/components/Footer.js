@@ -28,18 +28,28 @@ class Footer extends Component {
         return (
             <footer className="footer">
                 <section className="container-fluid">
-                    <div className="row">
-                        <div className="col footer-col footer-contactnum">
-                            <p >STO ROSARIO HOSPITAL CONTACT #:</p>
-                            <div><p><i class="fas fa-mobile-alt"></i> 0932-843-6537 | <i class="fas fa-phone"></i> 781-3331</p></div>
+                    <div className="row justify-content-center">
+                        <div className="col-sm-12 col-md-5 col-lg-6 col-xl-6 footer-col footer-contactnum text-center">
+                            <p>STO ROSARIO HOSPITAL CONTACT #:</p>
+                            <p><i class="fas fa-mobile-alt"></i> 0932-843-6537 | <i class="fas fa-phone"></i> 781-3331</p>
                         </div>
-                        <div className="col footer-col time__container">
-                            <div className="date_time">Date: <p id="date"></p></div>
-                            <div className="date_time">Time: <p id="time"></p></div>
+                        <div className="col-sm-12 col-md-4 col-lg-5 col-xl-5 footer-col time__container">
+                            <div className="row mx-auto text-center">
+                                <div className="col-sm-12 col-lg-4 col-xl-4">
+                                    <label className="date_time">Date:<p id="date"></p></label>
+                                </div>
+                                <div className="col-sm-12 col-lg-4 col-xl-4">
+                                    <label className="date_time">Time: <p id="time"></p></label>
+                                </div>
+                            </div>
+                            {/* <div className="col">
+                                   
+                                </div> */}
+
                         </div>
                     </div>
                 </section>
-            </footer>
+            </footer >
         )
     }
 }

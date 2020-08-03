@@ -11,18 +11,18 @@ function Pedia() {
 
 
     useEffect(() => {
-        console.log("COUNT "+ count)
+        console.log("COUNT " + count)
         passData();
-    },[count])
+    }, [count])
 
     const incrementCount = () => {
         setCount(prevCount => prevCount + 1)
     }
 
     const passData = () => {
-        axios.post("/pedia", {count})
+        axios.post("/pedia", { count })
             .then(res => console.log(res))
-            .catch(err => console.log("ERROR "+err))
+            .catch(err => console.log("ERROR " + err))
     }
 
     const decrementCount = () => {
@@ -36,20 +36,25 @@ function Pedia() {
 
     return (
         <div className="user-container">
-            {/* <form className="user-center"> */}
-                <div className="pedia__title-div">
-                    <h1 className="user__title">PEDIA</h1>
+            <div className="container">
+                <div className="row align-content-center">
+                    <div className="col-sm-12 align-self-center">
+                        <div className="w-50 mx-auto user-center">
+                            <div className="pedia__title-div">
+                                <h1 className="user__title">PEDIA</h1>
+                            </div>
+                            <div>
+                                <h1 className="current-queue">CURRENT QUEUE</h1>
+                            </div>
+                            <div>
+                                <h1 className="queue">{count}</h1>
+                            </div>
+                            <button className="add-btn" onClick={incrementCount}>ADD QUEUE</button>
+                            <button onClick={resetCount}>Reset Queue</button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1 className="current-queue">CURRENT QUEUE</h1>
-                </div>
-                <div>
-                    <h1 className="queue">{count}</h1>
-                </div>
-                <button className="add-btn" onClick={incrementCount}>ADD QUEUE</button>
-                {/* <a href="#" className="reset-btn">Reset Queue</a> */}
-                <button onClick={resetCount}>Reset</button>
-            {/* </form> */}
+            </div>
         </div>
     )
 }

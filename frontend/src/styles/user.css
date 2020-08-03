@@ -1,29 +1,29 @@
+*, *::after, *::before {
+    box-sizing: content-box;
+}
 
 .user-container {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    /* height: 100vh; */
     background: linear-gradient(rgba(255,255,255,.5), rgba(0,0,0,.3)), url(/images/srh1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+
 .user-center {
-    margin: auto;
-    height: 450px;
-    border-radius: 8px;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    max-width: 300px;
+    margin: 5rem 0;
+    padding: 50px;
     background-color: #fff;
+    text-align: center;
+    border-radius: 12px;
 }
 
-.user-center .adult__title-div {
+.adult__title-div {
     width: 100%;
     margin-top: -75px;
     padding: 12px;
@@ -33,7 +33,7 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
 
-.user-center .pedia__title-div {
+.pedia__title-div {
     width: 100%;
     margin-top: -75px;
     padding: 12px;
@@ -43,7 +43,7 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
 
-.user-center .cashier__title-div {
+.cashier__title-div {
     width: 100%;
     margin-top: -75px;
     padding: 12px;
@@ -53,7 +53,7 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
 
-.user-center .er__title-div {
+.er__title-div {
     width: 100%;
     margin-top: -75px;
     padding: 12px;
@@ -89,7 +89,7 @@
     font-size: 1.5rem;
     color:rgb(93, 77, 77);
     background: #4CAF50;
-    margin: 15px;
+    margin: 20px 0;
     border-radius: 5px;
     border: solid #4CAF50;
 }
