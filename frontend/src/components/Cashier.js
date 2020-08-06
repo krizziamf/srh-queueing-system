@@ -35,28 +35,19 @@ function Cashier() {
 
 
     return (
-        <div className="user-container">
-            <div className="container">
-                <div className="row align-content-center">
-                    <div className="col-sm-12 align-self-center">
-                        <div className="w-50 mx-auto user-center">
-                            <div className="cashier__title-div">
-                                <h1 className="user__title">CASHIER</h1>
-                            </div>
-                            <div className="cqueue-div">
-                                <h1 className="current-queue">CURRENT QUEUE</h1>
-                            </div>
-                            <div>
-                                <h1 className="queue">{count}</h1>
-                            </div>
-                            <button className="add-btn" onClick={incrementCount}>ADD QUEUE</button>
-                            <button onClick={resetCount}>Reset Queue</button>
-                        </div>
+        <section className="user-container">
+            <div className="container-fluid ">
+                <div className="user-div-center">
+                    <div className="cashier__title-div">
+                        <h1 className="user__title">CASHIER</h1>
                     </div>
+                    <h2>CURRENT QUEUE</h2>
+                    <p>{count}</p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onClick={incrementCount}>ADD QUEUE</button>
+                    <button type="button" class="btn btn-light" onClick={resetCount}>Reset Queue</button>
                 </div>
-
             </div>
-        </div>
+        </section >
     )
 }
 

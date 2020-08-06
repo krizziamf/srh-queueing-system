@@ -1,5 +1,4 @@
 .footer {
-    /* height: 2vh; */
     color:blue;
     background-color: white;
     font-size: 1.8rem;
@@ -21,10 +20,6 @@
 .time__container {
     margin: auto;
 }
-
-/* .time__container .date_time {
-    margin: 8px;
-} */
 
 .time__container p {
     margin: 0 5px;

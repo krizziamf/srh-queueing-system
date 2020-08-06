@@ -11,6 +11,7 @@ function Main() {
     const [pediaResponse, setPediaResponse] = useState(0);
     const [adultResponse, setAdultResponse] = useState(0);
     const [emergencyResponse, setEmergencyResponse] = useState(0);
+    const [role, setRole] = useState('');
 
     useEffect(() => {
         const socket = socketIOClient(ENDPOINT);
@@ -33,8 +34,10 @@ function Main() {
 
     return (
         <section className="main-container">
-            <div className="now_serving">
-                <h1>NOW SERVING</h1>
+            <div className="row justify-content-center ">
+                <div className="col-md-6 now_serving">
+                    <h1>NOW SERVING</h1>
+                </div>
             </div>
             <div className="row justify-content-center main-row">
                 <div className="col-sm-6 col-md-5 col-lg-5 col-xl-3 main-col">
@@ -45,7 +48,7 @@ function Main() {
                     <div className="main-adult">ADULT</div>
                     <h1>{adultResponse}</h1>
                 </div>
-                <div className="col-sm-6 col-md-5 col-lg-5 col-xl-2 main-col">
+                <div className="col-sm-6 col-md-5 col-lg-5 col-xl-3 main-col">
                     <div className="main-er">ER</div>
                     <h1>{emergencyResponse}</h1>
                 </div>

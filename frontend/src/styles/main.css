@@ -1,40 +1,30 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
 .main-container {
-    /* height: 75vh; */
     background: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,.8)), url(/images/srh1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-container .now_serving{
-    padding: 20px;
-    /* background-color: #fff; */
+    padding-top: 40px;
 }
 
 .main-container .now_serving h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: bolder;
     background-color: #fff;
-    margin: 0 20%;
 }
 
 .main-container .main-row {
-    padding: 115px 0;
+    padding: 85px 0;
     color: white;
     font-weight: bold;
-    font-size: 3.6rem;
+    font-size: 3.9rem;
     text-align: center;
     margin: 0;
 }
 
 .main-col h1 {
-    font-size: 175px;
+    font-size: 200px;
     font-weight: bold;
     color: #062C67;
     padding: 8px;

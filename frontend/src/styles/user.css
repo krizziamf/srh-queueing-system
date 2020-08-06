@@ -1,26 +1,32 @@
-*, *::after, *::before {
-    box-sizing: content-box;
-}
-
 .user-container {
-    margin: 0;
-    padding: 0;
-    /* width: 100%; */
-    /* height: 100vh; */
+    padding: 100px 0;
+    height: 100vh;
     background: linear-gradient(rgba(255,255,255,.5), rgba(0,0,0,.3)), url(/images/srh1.jpg);
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
 }
 
-
-.user-center {
-    max-width: 300px;
-    margin: 5rem 0;
-    padding: 50px;
+.user-div-center {
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 12px; 
     background-color: #fff;
     text-align: center;
-    border-radius: 12px;
+}
+
+.user-div-center h2 {
+    margin: 28px 0;
+    font-weight: bolder;
+}
+
+.user-div-center p {
+    font-size: 8rem;
+    font-weight: bolder;
+    margin: 1rem 0;
 }
 
 .adult__title-div {
@@ -35,7 +41,7 @@
 
 .pedia__title-div {
     width: 100%;
-    margin-top: -75px;
+    margin-top: -70px;
     padding: 12px;
     color: #fff;
     background-color: #16A085;
@@ -63,49 +69,21 @@
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); 
 }
 
-.user-center  .user__title {
-    text-align: center;
-    margin: 5px;
-}
-
-.user-center .current-queue {
-    margin: 0;
-    padding: 20px 15px;    
-    font-size: 2.4rem;
-    font-weight: bolder;
-}
-
-.user-center .queue {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: #062C67;
-    font-size: 9rem;
-    font-weight: bold;
-}
-
-.add-btn {
-    width: 100%;
-    font-size: 1.5rem;
+.btn-primary {
+    margin: 10px 0;
     color:rgb(93, 77, 77);
     background: #4CAF50;
-    margin: 20px 0;
-    border-radius: 5px;
     border: solid #4CAF50;
+    cursor: pointer;
+    transition: all 0.25s ease;
 }
 
-.add-btn a {
-    width: auto;
-    text-decoration: none;
-    color: #fff;
+.btn-primary:hover {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
 }
 
-.add-btn {
-cursor: pointer;
-transition: all 0.25s ease;
-}
-
-.add-btn a:hover {
-    font-size: 1.5rem;
-    color: #fff;
+.btn-primary:focus {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
 }
