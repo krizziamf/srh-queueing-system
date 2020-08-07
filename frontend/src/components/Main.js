@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import Header from './component/Header';
 import socketIOClient from "socket.io-client";
 import Footer from './Footer';
 import '../styles/main.css';
@@ -11,7 +10,6 @@ function Main() {
     const [pediaResponse, setPediaResponse] = useState(0);
     const [adultResponse, setAdultResponse] = useState(0);
     const [emergencyResponse, setEmergencyResponse] = useState(0);
-    const [role, setRole] = useState('');
 
     useEffect(() => {
         const socket = socketIOClient(ENDPOINT);

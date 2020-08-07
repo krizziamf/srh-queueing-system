@@ -7,7 +7,7 @@ const index = require("./app");
 
 const app = express();
 app.use(express.json());
-app.use("/test",index);
+app.use("/test", index);
 
 const server = http.createServer(app);
 
@@ -33,11 +33,11 @@ io.on("connection", (socket) => {
         clearInterval(pediaInterval);
     }
 
-    if(adultInterval) {
+    if (adultInterval) {
         clearInterval(adultInterval);
     }
 
-    if(emergencyInterval) {
+    if (emergencyInterval) {
         clearInterval(emergencyInterval);
     }
 
@@ -64,6 +64,9 @@ io.on("connection", (socket) => {
     socket.on("disconnect", () => {
         clearInterval(emergencyInterval);
     });
+    socket.on("play", playMsg => {
+        io.emit("play", playMsg);
+    })
 });
 
 const getCashierCountAndEmit = socket => {
@@ -85,24 +88,24 @@ const getEmergencyCountAndEmit = socket => {
 }
 
 
-app.post('/cashier', (req,res) => {
+app.post('/cashier', (req, res) => {
     console.log(req.body.count);
     cashierCount = req.body.count;
     res.send("GOT THE DATA FROM CASHIER COMPONENT");
 });
 
-app.post('/pedia', (req,res) => {
+app.post('/pedia', (req, res) => {
     console.log(req.body.count);
     pediaCount = req.body.count;
     res.send("GOT THE DATA FROM PEDIA COMPONENT");
 });
 
-app.post('/adult', (req,res) => {
+app.post('/adult', (req, res) => {
     adultCount = req.body.count;
     res.send("GOT THE DATA FROM ADULT COMPONENT");
 });
 
-app.post('/emergency', (req,res) => {
+app.post('/emergency', (req, res) => {
     emergencyCount = req.body.count;
     res.send("GOT THE DATA FROM EMERGENCY COMPONENT");
 })
