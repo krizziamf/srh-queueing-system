@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import io from 'socket.io-client';
-import audioFile from './bell.mp3';
 import '../styles/user.css';
 
-const socket = io.connect("http://localhost:4000");
-
-const audio = new Audio();
 
 function Pedia() {
 
     const initialCount = 0;
     const [count, setCount] = useState(initialCount);
-    const [role, setRole] = useState("");
-
 
     useEffect(() => {
         console.log("COUNT " + count)
