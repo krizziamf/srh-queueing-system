@@ -23,14 +23,10 @@ function Main() {
         const socket = socketIOClient(ENDPOINT);
 
         socket.on("FromCashier", data => {
-            console.log("CASHIER RESPONSE");
             if(cashierResponse !== data) {
-                console.log("CASHIER");
                 setCashierResponse(data);
-                console.log("LOG COUNT "+logs)
                 let cashier = document.getElementById("cashier");
                 if (cashier) {
-                    console.log("CASHIER SOUND");
                     cashier.addEventListener("change", play());
                 }
             }
@@ -38,14 +34,10 @@ function Main() {
         });
 
         socket.on("FromPedia", data => {
-            console.log("PEDIA RESPONSE");
             if(pediaResponse !== data) {
-                console.log("PEDIA");
                 setPediaResponse(data);
-                console.log("LOG COUNT "+logs)
                 let pedia = document.getElementById("pedia");
                 if (pedia) {
-                    console.log("PEDIA SOUND");
                     pedia.addEventListener("change", play());
                 }
             }
@@ -53,14 +45,10 @@ function Main() {
         });
 
         socket.on("FromAdult", data => {
-            console.log("ADULT RESPONSE");
             if(adultResponse !== data) {
-                console.log("ADULT");
                 setAdultResponse(data);
-                console.log("LOG COUNT "+logs)
                 let adult = document.getElementById("adult");
                 if (adult) {
-                    console.log("ADULT SOUND");
                     adult.addEventListener("change", play());
                 }
             }
@@ -68,12 +56,8 @@ function Main() {
         });
 
         socket.on("FromEmergency", data => {
-            console.log("ER RESPONSE");
-
             if(emergencyResponse !== data) {
-                console.log("EMERGENCY");
                 setEmergencyResponse(data);
-                console.log("LOG COUNT "+logs)
                 let er = document.getElementById("er");
                 if (er) {
                     er.addEventListener("change", play());
