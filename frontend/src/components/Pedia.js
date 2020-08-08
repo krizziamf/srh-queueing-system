@@ -18,20 +18,6 @@ function Pedia() {
     useEffect(() => {
         console.log("COUNT " + count)
         passData();
-
-        function receiveMessage(m) {
-            if (role === 'server') {
-                audio.src = m.path;
-                audio.play();
-            }
-        }
-        socket.on('play', receiveMessage);
-
-        return () => {
-            socket.off('play', receiveMessage);
-        }
-
-
     }, [count])
 
     const incrementCount = () => {
@@ -52,11 +38,6 @@ function Pedia() {
         setCount(initialCount);
     }
 
-    function handlePlaySound() {
-        socket.emit("play", { name: 'Test sound', path: audioFile });
-        console.log('hello!');
-    }
-
     return (
         <section className="user-container">
             <div className="container-fluid ">
@@ -66,8 +47,8 @@ function Pedia() {
                     </div>
                     <h2>CURRENT QUEUE</h2>
                     <p>{count}</p>
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onClick={() => { incrementCount(); handlePlaySound(); setRole('server'); }}>ADD QUEUE</button>
-                    <button type="button" class="btn btn-light" onClick={() => { resetCount(); setRole('client'); }}>Reset Queue</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onClick={() => { incrementCount() }}>ADD QUEUE</button>
+                    <button type="button" class="btn btn-light" onClick={() => { resetCount() }}>Reset Queue</button>
                 </div>
             </div >
         </section >
