@@ -31,7 +31,6 @@ function Pedia() {
         setCount(initialCount);
     }
 
-
     return (
         <section className="user-container">
             <div className="container-fluid ">
@@ -41,8 +40,8 @@ function Pedia() {
                     </div>
                     <h2>CURRENT QUEUE</h2>
                     <p>{count}</p>
-                    <button type="button" class="btn btn-primary btn-lg btn-block" onClick={() => { incrementCount(); }}>ADD QUEUE</button>
-                    <button type="button" class="btn btn-light" onClick={resetCount}>Reset Queue</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onClick={() => { incrementCount() }}>ADD QUEUE</button>
+                    <button type="button" class="btn btn-light" onClick={() => { resetCount() }}>Reset Queue</button>
                 </div>
             </div >
         </section >
