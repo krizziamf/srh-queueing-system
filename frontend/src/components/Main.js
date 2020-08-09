@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import socketIOClient from "socket.io-client";
+import useSound from 'use-sound';
 import Footer from './Footer';
+import ding from './dingdong.mp3';
 import '../styles/main.css';
 const ENDPOINT = "http://localhost:4000";
 
 
 function Main() {
+    const [play] = useSound(ding);
     const [cashierResponse, setCashierResponse] = useState(0);
     const [pediaResponse, setPediaResponse] = useState(0);
     const [adultResponse, setAdultResponse] = useState(0);
     const [emergencyResponse, setEmergencyResponse] = useState(0);
+
 
     useEffect(() => {
         const socket = socketIOClient(ENDPOINT);
@@ -41,6 +45,7 @@ function Main() {
                 <div className="col-sm-6 col-md-5 col-lg-5 col-xl-3 main-col">
                     <div className="main-pedia">PEDIA</div>
                     <h1>{pediaResponse}</h1>
+                    <button onClick={play}>s</button>
                 </div>
                 <div className="col-sm-6 col-md-5 col-lg-5 col-xl-3 main-col">
                     <div className="main-adult">ADULT</div>

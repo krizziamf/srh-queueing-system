@@ -64,9 +64,6 @@ io.on("connection", (socket) => {
     socket.on("disconnect", () => {
         clearInterval(emergencyInterval);
     });
-    socket.on("play", playMsg => {
-        io.emit("play", playMsg);
-    })
 });
 
 const getCashierCountAndEmit = socket => {
