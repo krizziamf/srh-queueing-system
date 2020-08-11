@@ -111,10 +111,10 @@ app.post('/emergency', (req, res) => {
 //Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
     //set static folder
-    app.use(express.static('srh-queueing-system/build'));
+    app.use(express.static('frontend/build'));
 
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../srh-queueing-system/build', 'index.html'));
+        res.sendFile(path.resolve(__dirname, '../frontend/build', 'index.html'));
     })
 }
 
