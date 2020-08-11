@@ -108,4 +108,15 @@ app.post('/emergency', (req, res) => {
 })
 
 
+//Serve static assets if in production
+if (process.env.NODE_ENV === 'production') {
+    //set static folder
+    app.use(express.static('srh-queueing-system/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, '../srh-queueing-system/build', 'index.html'));
+    })
+}
+
+
 server.listen(port, () => console.log(`Listening on port ${port}`));
