@@ -4,7 +4,7 @@ import useSound from 'use-sound';
 import Footer from './Footer';
 import ding from './dingdong.mp3';
 import '../styles/main.css';
-const ENDPOINT = "https://srh-queueing-system.herokuapp.com/";
+const ENDPOINT = "https://srh-queue.herokuapp.com/";
 
 
 function Main() {
