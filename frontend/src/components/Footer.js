@@ -33,12 +33,12 @@ class Footer extends Component {
                             <p>STO ROSARIO HOSPITAL CONTACT #:</p>
                             <p><i class="fas fa-mobile-alt"></i> 0932-843-6537 | <i class="fas fa-phone"></i> 781-3331</p>
                         </div>
-                        <div className="col-sm-12 col-md-4 col-lg-5 col-xl-5 footer-col time__container">
+                        <div className="col-sm-12 col-md-5 col-lg-5 col-xl-5 footer-col time__container">
                             <div className="row mx-auto text-center">
                                 <div className="col-sm-12 col-lg-4 col-xl-4">
                                     <label className="date_time">Date:<p id="date"></p></label>
                                 </div>
-                                <div className="col-sm-12 col-lg-4 col-xl-4">
+                                <div className="col-sm-12  col-lg-5 col-xl-5">
                                     <label className="date_time">Time: <p id="time"></p></label>
                                 </div>
                             </div>
